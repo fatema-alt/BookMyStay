@@ -1,69 +1,138 @@
-# CodeIgniter 4 Application Starter
+# 🏨 BookMyStay - Hotel Booking System
 
-## What is CodeIgniter?
+BookMyStay is a modern hotel booking web application built with **CodeIgniter 4** and **MySQL**. It provides a complete booking experience including room search, booking, payment integration, reviews, notifications, and admin management.
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+---
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+## 🚀 Features
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+### 👤 User Features
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+- User Registration & Login
+- Room Search & Listing
+- Room Details View
+- Date-wise Booking System
+- Booking History (My Bookings)
+- Cancel Booking Request
+- Online Payment (SSLCommerz Sandbox)
+- Payment Status Tracking
+- Review & Rating System ⭐
+- User Profile (Image Upload + Avatar)
+- Notification System 🔔
+- Invoice PDF Download 🧾
 
-## Installation & updates
+---
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+### ⚙️ Admin Features
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+- Admin Dashboard
+- Booking Management (Approve / Cancel)
+- Room Management (CRUD)
+- Room Type Management
+- Review Approval System
+- Payment Tracking (Basic)
+- Admin Panel UI
 
-## Setup
+---
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+## 💳 Payment Integration
 
-## Important Change with index.php
+- SSLCommerz Sandbox Integrated
+- Payment Validation System
+- Booking Status Auto Update
+- Payment Notifications
+- Invoice Generation after Payment
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+---
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+## 🔔 Notification System
 
-**Please** read the user guide for a better explanation of how CI4 works!
+- Booking Confirmation
+- Booking Cancellation
+- Payment Success
+- Review Approval
+- Clickable Notifications (Redirect to details)
 
-## Repository Management
+---
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+## 🧾 Invoice System
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+- PDF Invoice Download
+- Luxury UI Design
+- Payment Details Included
 
-## Server Requirements
+---
 
-PHP version 8.2 or higher is required, with the following extensions installed:
+## 🛠️ Tech Stack
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+- **Backend:** CodeIgniter 4 (PHP)
+- **Frontend:** HTML, CSS, JavaScript
+- **Database:** MySQL
+- **Payment Gateway:** SSLCommerz (Sandbox)
+- **PDF Generator:** DomPDF
 
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - The end of life date for PHP 8.1 was December 31, 2025.
-> - If you are still using below PHP 8.2, you should upgrade immediately.
-> - The end of life date for PHP 8.2 will be December 31, 2026.
+---
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+## 📁 Project Structure
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+
+app/
+├── Controllers/
+├── Views/
+│ ├── user/
+│ ├── admin/
+│ ├── booking/
+│ ├── review/
+│ ├── invoice/
+│ └── layouts/
+├── Models/
+├── Filters/
+
+public/
+├── assets/
+│ ├── CSS/
+│ ├── JS/
+│ └── images/
+
+
+---
+
+## ⚙️ Installation
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/bookmystay.git
+Go to project folder
+cd bookmystay
+Install dependencies
+composer install
+Setup environment
+Copy .env.example → .env
+Configure database
+Run server
+php spark serve
+
+
+
+## Future Improvements
+Advanced Admin Dashboard (Charts)
+Email Notification System
+Multiple Room Images Upload
+Coupon / Discount System
+Booking Calendar UI
+Security Enhancements
+
+
+## 👩‍💻 Author
+**Fatema Yesmin**
+
+- GitHub: https://github.com/fatema-alt
+
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
+
