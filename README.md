@@ -102,7 +102,7 @@ public/
 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/bookmystay.git
+git clone https://github.com/fatema-alt/BookMyStay
 Go to project folder
 cd bookmystay
 Install dependencies
